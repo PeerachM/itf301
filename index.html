@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Peerach</title>
+    <script>
+        function set_name() {
+            const nameFeild = document.getElementById("username");
+            const newName = nameFeild.value;
+            const title = document.getElementById("name");
+            title.innerHTML = newName + "'s gallery"
+        }
+        function set_image() {
+            const profileImage = document.getElementById("image_url");
+            const classs = document.getElementById("parent")
+            const profileImageURL = profileImage.value;
+            classs.style.backgroundImage = "url(" + profileImageURL + ")";
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div class="parent" id="parent">
+            <div class="child">
+                <p class="noti">1</p>
+            </div>
+        </div>
+        <a href="https://github.com/PeerachM" id="name">Peerach's Gallery</a>
+        <div class="flex">
+            <p>set profile name</p>
+            <input type="text" id="username">
+            <button onclick="set_name()">click</button>
+        </div>
+        <div class="flex">
+            <p>set profile image</p>
+            <input type="text" id="image_url">
+            <button onclick="set_image()">click</button>
+        </div>
+        <div class="gallery">
+            <div class="image" id="extend-col"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image" id="extend-row"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+}
+
+
+main {
+    width: 1024px;
+    min-height: 100vh;
+    border: 50px black;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.parent {
+    margin: 16px 0px 0px 0px;
+    position: relative;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url(https://images.pexels.com/photos/982300/pexels-photo-982300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+.child {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.noti {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    
+}
+
+
+#name {
+    margin: 32px;
+    color: black;
+    font-size: 48px;
+    text-decoration: none;
+    font-weight: bolder
+}
+
+#name:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.flex {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 10px;
+    margin: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    width: 100%px;
+    height: 100%;
+    margin: 25px 0px 50px 0px;
+}
+
+.gallery .image {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+#extend-col {
+    grid-column: span 2;
+    background-color: red;
+    width: 100%;
+}
+
+#extend-row {
+    grid-row: span 2;
+    background-color: red;
+    height: 100%;
+}
+
+.gallery .image:nth-child(1){
+    background-image: url(https://images.pexels.com/photos/866496/pexels-photo-866496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.gallery .image:nth-child(2){
+    background-image: url(https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.gallery .image:nth-child(3){
+    background-image: url(https://images.pexels.com/photos/1317844/pexels-photo-1317844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.gallery .image:nth-child(4){
+    background-image: url(https://images.pexels.com/photos/2686914/pexels-photo-2686914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.gallery .image:nth-child(5){
+    background-image: url(https://images.pexels.com/photos/384555/pexels-photo-384555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.gallery .image:nth-child(6){
+    background-image: url(https://images.pexels.com/photos/3257811/pexels-photo-3257811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.gallery .image:nth-child(7){
+    background-image: url(https://images.pexels.com/photos/3643714/pexels-photo-3643714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.gallery .image:nth-child(8){
+    background-image: url(https://images.pexels.com/photos/6897077/pexels-photo-6897077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.gallery .image:nth-child(9){
+    background-image: url(https://images.pexels.com/photos/2698519/pexels-photo-2698519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.gallery .image:nth-child(10){
+    background-image: url(https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
